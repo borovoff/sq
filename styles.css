@@ -1,9 +1,5 @@
 :root {
-    --card-margin-width: 30px;
-    --column-margin: 100px;
     --base-color: #0a2437;
-    --blue-color: #b7f2ed;
-    --logo-diameter: 60px;
     --background-color: #f3f3f3;
     --border-radius: 10px;
 }
@@ -29,6 +25,14 @@ h2 {
     margin-top: 0;
 }
 
+img {
+    display: block;
+    width: auto;
+    height: 100%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -41,7 +45,22 @@ h2 {
 .row-contact {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 340px;
+    flex-wrap: wrap;
+}
+
+.contact {
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 445px) {
+    .row-contact {
+        width: unset;
+    }
+
+    .contact {
+        margin-bottom: 8px;
+    }
 }
 
 .info {
@@ -59,16 +78,13 @@ h2 {
 .info-blocks {
     display: flex;
     flex-wrap: wrap;
-}
-
-.contact {
-    margin-left: 10px;
+    margin: 18px;
 }
 
 .block {
     flex: 1 0 25%;
-    margin: 26px;
-    padding: 40px;
+    margin: 16px;
+    padding: 30px;
     border-radius: var(--border-radius);
     background-color: white;
 }
@@ -99,6 +115,7 @@ h2 {
 ul {
     list-style-type: none;
     padding-left: 0;
+    width: 400px;
 }
 
 h4 {
@@ -127,7 +144,6 @@ h4 {
 .draw {
     height: 300px;
     margin: 10px;
-    border-radius: var(--border-radius);
 }
 
 .certs {
@@ -155,6 +171,22 @@ h4 {
 }
 
 footer {
-    margin: 20px 0;
-    text-align: center;
+    margin: 20px auto 10px;
+    max-width: 920px;
+}
+
+@media only screen and (max-width: 800px) {
+    .specs {
+        width: unset;
+    }
+
+    .draw {
+        width: 100%;
+        height: unset;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }

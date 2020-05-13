@@ -17,6 +17,20 @@
     <meta property="og:url" content="https://suzie-q.nl"/>
     <meta property="og:type" content="website"/>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        fullScreen = element => {
+            if (element.requestFullScreen) {
+                element.requestFullScreen()
+            } else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen()
+            } else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen()
+            }
+            link = document.getElementById("container")
+            link.removeAttribute("onclick")
+            link.setAttribute("onclick", "cancelFullScreen()")
+        }
+    </script>
 </head>
 <body>
 <div class="column">
@@ -41,11 +55,11 @@
                     </address>
                     <h2 style="margin-top: 10px">Contacts</h2>
                     <div class="row-contact">
-                        <div class="column">
+                        <div class="column contact">
                             <a href="tel:+7 921 944-8257">+7 921 944-8257</a>
                             <a href="tel:+31 6 21 39-3631">+31 62 139-3631</a>
                         </div>
-                        <div class="column contact">
+                        <div class="column">
                             <a href="mailto:management@suzie-q.nl">management@suzie-q.nl</a>
                             <a href="mailto:jan@wind.nl">jan@wind.nl</a>
                         </div>
@@ -160,9 +174,15 @@
         </div>
     </div>
     <div class="drawings">
-        <img src="drawings/main.gif" class="draw">
-        <img src="drawings/front.gif" class="draw">
-        <img src="drawings/hold_ceiling.jpg" class="draw">
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="drawings/main.gif">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="drawings/front.gif">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="drawings/hold_ceiling.jpg">
+        </div>
     </div>
     <div id="certificates" class="certs">
         <h1>Certificates</h1>
@@ -190,24 +210,55 @@
         </div>
     </div>
     <div class="photos">
-        <img src="images/1.jpg" class="draw">
-        <img src="images/2.jpg" class="draw">
-        <img src="images/3.jpg" class="draw">
-        <img src="images/4.jpg" class="draw">
-        <img src="images/5.jpg" class="draw">
-        <img src="images/6.jpg" class="draw">
-        <img src="images/7.jpg" class="draw">
-        <img src="images/8.jpg" class="draw">
-        <img src="images/9.jpg" class="draw">
-        <img src="images/11.jpg" class="draw">
-        <img src="images/12.jpg" class="draw">
-        <img src="images/13.jpg" class="draw">
-        <img src="images/14.jpg" class="draw">
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/1.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/2.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/3.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/4.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/5.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/6.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/7.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/8.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/9.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/10.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/11.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/12.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/13.jpg">
+        </div>
+        <div class="draw">
+            <img onclick="fullScreen(this)" src="images/14.jpg">
+        </div>
     </div>
 </div>
 <footer>
-    AMAZON SHIPPING was born in 2002 and created by small group of enthusiastic people, seamen and specialists in their fields.<br>
-    The owners try to give a second life to an old ship, bring her to best condition and operate her with highest standards.
+    AMAZON SHIPPING was born in 2002 and created by small group of enthusiastic people, seamen and specialists in their
+    fields.
+    The owners try to give a second life to an old ship, bring her to best condition and operate her with highest
+    standards.
 </footer>
 </body>
 </html>
