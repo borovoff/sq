@@ -18,7 +18,7 @@
     <meta property="og:type" content="website"/>
     <link rel="stylesheet" href="styles.css">
     <script>
-        fullScreen = element => {
+        function fullScreen(element) {
             if (element.requestFullScreen) {
                 element.requestFullScreen()
             } else if (element.webkitRequestFullScreen) {
@@ -86,7 +86,7 @@
     <div id="specs" class="specs">
         <h1>Technical specifications</h1>
         <div class="specs-row">
-            <ul>
+            <ul style="margin-right: 10px">
                 <li>
                     <h4>TYPE:</h4>
                     General cargo / Singledecker<br>
@@ -181,9 +181,9 @@
             <img onclick="fullScreen(this)" src="drawings/hold_ceiling.jpg">
         </div>
     </div>
-    <div id="certificates" class="certs">
+    <div id="certificates" class="specs">
         <h1>Certificates</h1>
-        <div class="cert-row">
+        <div class="specs-row">
             <a href="#" class="certificate">Certificate of Bareboat Charter Registry</a>
             <a href="#" class="certificate">Certificate of Classification</a>
             <a href="#" class="certificate">Cargo Ship Safety Construction Certificate</a>
@@ -252,10 +252,11 @@
     </div>
 </div>
 <footer>
-    AMAZON SHIPPING was born in 2002 and created by small group of enthusiastic people, seamen and specialists in their
-    fields.
-    The owners try to give a second life to an old ship, bring her to best condition and operate her with highest
-    standards.
+    <div class="footer">
+        AMAZON SHIPPING was created in 2002 by small group of enthusiastic people, seamen and profile specialists.
+        The owners try to give the second life to an old ship, bring her to the best condition and operate her with the highest
+        standards.
+    </div>
 </footer>
 </body>
 </html>

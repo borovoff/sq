@@ -115,7 +115,8 @@ img {
 ul {
     list-style-type: none;
     padding-left: 0;
-    width: 400px;
+    width: 300px;
+    margin: 0;
 }
 
 h4 {
@@ -129,10 +130,16 @@ h4 {
     width: 800px;
 }
 
+.specs > h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .specs-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 10px;
 }
 
 .drawings {
@@ -146,21 +153,8 @@ h4 {
     margin: 10px;
 }
 
-.certs {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 60px auto;
-}
-
-.cert-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .certificate {
-    width: 400px;
+    width: 390px;
     margin-bottom: 3px;
 }
 
@@ -171,8 +165,12 @@ h4 {
 }
 
 footer {
-    margin: 20px auto 10px;
+    margin: 30px auto 10px;
     max-width: 920px;
+}
+
+.footer {
+    margin: 0 10px;
 }
 
 @media only screen and (max-width: 800px) {
