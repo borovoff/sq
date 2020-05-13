@@ -1,0 +1,114 @@
+:root {
+
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+h1, h2 {
+    margin-bottom: 4px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+.block {
+    flex: 1 0 35%;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    margin: 8px;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f3f3f3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h4 {
+    margin: 4px 0 0;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+}
+
+.specs-row {
+    display: flex;
+}
+
+.drawings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.draw {
+    height: 300px;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificate {
+    width: 500px;
+}
+
+footer {
+    margin: 20px 0;
+    text-align: center;
+}
