@@ -180,6 +180,16 @@ footer {
     margin: 0 10px;
 }
 
+@media only screen and (max-width: 400px) {
+    .certificate {
+        width: unset;
+    }
+
+    ul {
+        width: unset;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .specs {
         width: unset;
