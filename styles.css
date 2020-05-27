@@ -33,6 +33,21 @@ img {
     cursor: pointer;
 }
 
+.logo {
+    width: 300px;
+    margin: 36px auto 20px;
+}
+
+.broker-link {
+    width: 140px;
+    margin-right: 4px;
+}
+
+.broker {
+    margin-top: 4px;
+    min-width: 270px;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -45,12 +60,13 @@ img {
 .row-contact {
     display: flex;
     justify-content: space-between;
-    width: 340px;
+    max-width: 340px;
     flex-wrap: wrap;
 }
 
 .contact {
     margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .info {
@@ -117,7 +133,7 @@ h4 {
 .specs {
     display: flex;
     flex-direction: column;
-    margin: 60px auto;
+    margin: 100px auto;
     width: 800px;
 }
 
@@ -162,8 +178,8 @@ h4 {
 }
 
 footer {
-    margin: 30px auto 10px;
-    max-width: 920px;
+    margin: 60px auto 10px;
+    max-width: 820px;
 }
 
 .footer {
@@ -186,7 +202,7 @@ footer {
     }
 
     .contact {
-        margin-bottom: 8px;
+
     }
 
     .info-blocks {
@@ -201,6 +217,7 @@ footer {
 @media only screen and (max-width: 800px) {
     .specs {
         width: unset;
+        margin: 60px auto;
     }
 
     .draw {
