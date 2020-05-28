@@ -33,19 +33,21 @@ img {
     cursor: pointer;
 }
 
+.contact-name {
+    margin-bottom: 2px;
+}
+
 .logo {
     width: 300px;
     margin: 36px auto 20px;
 }
 
-.broker-link {
-    width: 140px;
-    margin-right: 4px;
-}
-
 .broker {
     margin-top: 4px;
-    min-width: 270px;
+}
+
+.broker-contact {
+    margin-top: 4px;
 }
 
 .column {
@@ -66,7 +68,6 @@ img {
 
 .contact {
     margin-right: 8px;
-    margin-bottom: 8px;
 }
 
 .info {
@@ -201,16 +202,18 @@ footer {
         width: unset;
     }
 
-    .contact {
-
-    }
-
     .info-blocks {
         margin: 9px;
     }
 
     .block {
         margin: 8px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .contact {
+        margin-bottom: 8px;
     }
 }
 
