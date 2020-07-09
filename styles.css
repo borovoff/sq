@@ -38,8 +38,10 @@ img {
 }
 
 .logo {
-    width: 300px;
-    margin: 36px auto 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto 0;
 }
 
 .broker {
